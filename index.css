@@ -9,7 +9,7 @@
     height: 100vh;
 }
 .container{
-    max-height: 320px;
+    max-height: 650px;
     background-color: rgb(213, 211, 211);
 }
 .first{
@@ -97,11 +97,12 @@
     letter-spacing: 1px;
     padding-top: 35px;
 }
-.btn{
+form{
     display: flex;
+    justify-content: space-between;
 }
-.btn input{
-    width: 200px;
+form input{
+    width: 180px;
     padding: 5px 14px;
     margin-right: 5px;
     outline: none;
@@ -188,7 +189,8 @@
         align-items: center;
     }
     .container{
-        max-height: 600px;
+        width: 100vw;
+        max-height: 800px;
         margin: 0 auto;
         text-align: center;
     }
@@ -221,11 +223,11 @@
     }
 }
 @media only screen and (max-width:390px) {
-    .btn{
+    form{
         display: flex;
         flex-direction: column;
     }
-    .btn input{
+    form input{
         margin-bottom: 15px;
     }
     .btn3{
