@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    max-height: 320px;
+    background-color: rgb(213, 211, 211);
+}
+.first{
+    max-width: 405px;
+    margin: 0 auto;
+    text-align: center;
+    /* border-bottom: 1px solid rgb(54, 53, 53); */
+}
+.first p{
+    opacity: 0.6;
+    font-size: 29px;
+    letter-spacing: 1px;
+    padding-top: 35px;
+    padding-bottom: 47px;
+}
+.image{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.desc1,.desc2{
+    object-fit: cover;
+    border: 2px solid rgb(175, 175, 175);
+}
+.btn1{
+    padding: 13px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+.second{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 55px;
+}
+#featu{
+    opacity: 0.6;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-top: 35px;
+    padding-bottom: 47px;
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+}
+.product1 img{
+    object-fit: fill;
+    border: 2px solid rgb(175, 175, 175);
+    margin-bottom: 10px;
+    width: 300px;
+    height: 250px;
+}
+.product-name{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.product2 img{
+    object-fit: fill;
+    border: 2px solid rgb(175, 175, 175);
+    margin-bottom: 10px;
+    width: 300px;
+    height: 250px;
+}
+.product-price{
+    font-size: 19px;
+}
+.third{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+.lorem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news{
+    opacity: 0.6;
+    font-size: 29px;
+    letter-spacing: 1px;
+    padding-top: 35px;
+}
+.btn{
+    display: flex;
+}
+.btn input{
+    width: 200px;
+    padding: 5px 14px;
+    margin-right: 5px;
+    outline: none;
+}
+.btn3{
+    padding: 5px 19px;
+}
+.fourth{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto;
+    /* grid-gap: 15px; */
+}
+.img1{
+    grid-row: 1/span 2;
+}
+.img1 img,.img2 img,.img3 img,.img4 img,.img5 img{
+    margin-bottom: 10px;
+}
+.img1 img{
+    object-fit: fill;
+    border: 2px solid rgb(175, 175, 175);
+}
+.img2 img{
+    object-fit: fill;
+    border: 2px solid rgb(175, 175, 175);
+}
+.img3 img{
+    object-fit: fill;
+    border: 2px solid rgb(175, 175, 175);
+}
+.img4 img{
+    object-fit: fill;
+    border: 2px solid rgb(175, 175, 175);
+}
+.img5 img{
+    object-fit: fill;
+    border: 2px solid rgb(175, 175, 175);
+}
+.image-product{
+    width:250px; 
+    height:150px;
+}
+.image-product1{
+    width:250px; 
+    height:375px;
+}
+@media only screen and (max-width:1012px) {
+    .fourth{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width:965px) {
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:705px) {
+    .lorem{
+        display: flex;
+        flex-direction: column;
+    }
+    .lorem p{
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width:702px) {
+    .fourth{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:418px) {
+    .image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        max-height: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .desc1{
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width:390px) {
+    .product1 img{
+        object-fit: fill;
+        border: 2px solid rgb(175, 175, 175);
+        /* margin-bottom: 10px; */
+        width: 200px;
+        height: 100px;
+    }
+    .product2 img{
+        object-fit: fill;
+        border: 2px solid rgb(175, 175, 175);
+        /* margin-bottom: 10px; */
+        width: 200px;
+        height: 100px;
+    }
+    .image-product{
+        width:200px; 
+        height:100px;
+    }
+    .image-product1{
+        width:200px; 
+        height:265px;
+    }
+}
+@media only screen and (max-width:390px) {
+    .btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn input{
+        margin-bottom: 15px;
+    }
+    .btn3{
+        width: 60%;
+        padding: 5px 19px;
+    }
+}
